@@ -1,0 +1,76 @@
+div.banner.one{
+width: 300px;
+height: 250px;
+background-image: url("images/palosantoback.jpg");
+border:1px solid brown;
+animation: backgroundmove 5s infinite alternate;
+}
+
+div.banner.two{
+width:728px;
+height:90px;
+background-image: url("images/pink.jpg");
+border:1px solid brown;
+animation: movein 1s infinite alternate;
+
+}
+
+
+div.banner.three{
+width:160px;
+height:600px;
+background-image: url("images/sagebanner.jpg");
+border:1px solid brown;
+animation: rotate 5s infinite alternate;
+
+}
+
+.text{
+	font-size:;
+	font-family:;
+	text-align: center;
+}
+.text{
+    opacity:0;
+}
+
+.text:hover{
+    opacity:1;
+    transition: 1s linear 0s;
+}
+
+@keyframes backgroundmove{
+	0%{
+		background-position: 0px 0px;
+	}
+	50%{
+		background-position:5px 45%;
+	}
+	100%{
+		background-position: 50% 0px;
+	}
+}
+
+
+@keyframes movein{
+	0%{
+		transform: translate(100px);
+	}
+	50%{
+		transform: translate(60px);
+	}
+	100%{
+		transform: translate(90px);
+	}
+}
+
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
